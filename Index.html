@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Gabriel | Print Media Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #004D40; /* Deep Teal */
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --card-bg: #F4F7F6;
+            --border-color: #E0E0E0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 15px;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            background-color: var(--card-bg);
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .meta-item span {
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin: 40px 0 20px 0;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .project-card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 650px; /* Increased height for optimal multi-page scrolling and menu visibility */
+            border-bottom: 1px solid var(--border-color);
+            background-color: #EBEBEB;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .project-details {
+            padding: 25px;
+        }
+
+        .project-details h3 {
+            font-size: 16px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            font-size: 13px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .spec-list li span {
+            font-weight: bold;
+            min-width: 160px;
+            display: inline-block;
+            color: #555555;
+        }
+
+        .spec-text {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 12px;
+            color: #777777;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 10px; }
+            .pdf-container { height: 450px; }
+            .spec-list li { flex-direction: column; }
+            .spec-list li span { margin-bottom: 2px; }
+        }
+
+        @media print {
+            body { padding: 0; background: #fff; }
+            .project-card { page-break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+            .pdf-container { height: 800px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Graphic Art & Print Media Portfolio</h1>
+        <div class="subtitle">Selected Layout, Technical Typographic Formatting, & Pre-Press Production Projects</div>
+        
+        <div class="meta-info">
+            <div class="meta-item"><span>Consultant:</span> Simon Gabriel</div>
+            <div class="meta-item"><span>Business Name:</span> Galokasio Art & Designs</div>
+            <div class="meta-item"><span>Location:</span> Port Moresby, NCD, PNG</div>
+            <div class="meta-item"><span>Target Position:</span> Print Media Specialist Consultant</div>
+        </div>
+    </header>
+
+    <div class="section-title">Project Case Studies</div>
+
+    <div class="project-card">
+        <div class="pdf-container">
+            <iframe src="final P4GG1.pdf#page=1&view=FitH"></iframe>
+        </div>
+        <div class="project-details">
+            <h3>Project Case 1: Institutional Publication Layout & Typography</h3>
+            <ul class="spec-list">
+                <li><span>Project Classification:</span> <div class="spec-text">Multi-Page Institutional Publication Layout</div></li>
+                <li><span>Objective:</span> <div class="spec-text">Format multi-page data and technical text into a structured, legible publication under institutional guidelines.</div></li>
+                <li><span>Technical Execution:</span> <div class="spec-text">Created consistent layout grid systems, uniform typography hierarchies, and page numbering schemas. Balanced text densities with visual margins to ensure readability for official stakeholders. All assets structured to client brand identity guidelines.</div></li>
+                <li><span>Source Baseline:</span> <div class="spec-text">Reference implementation from EU-PNG Partnership for Good Governance Technical Assistance Project Report.</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="pdf-container">
+            <iframe src="VCLMS Results Poster - At A Glance1 (A4 Portrait).pdf#page=1&view=FitH"></iframe>
+        </div>
+        <div class="project-details">
+            <h3>Project Case 2: High-Impact Data Visualization & Large-Format Layout</h3>
+            <ul class="spec-list">
+                <li><span>Project Classification:</span> <div class="spec-text">Data Visualization & Infographic Poster Layout</div></li>
+                <li><span>Objective:</span> <div class="spec-text">Deliver structurally accurate, large-format graphic schematics matching strict physical dimensions.</div></li>
+                <li><span>Technical Execution:</span> <div class="spec-text">Generated vector assets, calculated material display scales, and mapped layout visibility. Provided blueprint guides ensuring error-free material fabrication and high-fidelity visibility.</div></li>
+                <li><span>Source Baseline:</span> <div class="spec-text">Reference implementation from VCLMS Results At-A-Glance National Poster (Community Justice Reform).</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="pdf-container">
+            <iframe src="EIA PROCESS ENV ACT 200.pdf#page=1&view=FitH"></iframe>
+        </div>
+        <div class="project-details">
+            <h3>Project Case 3: Infographics & Process Flow Chart Mapping</h3>
+            <ul class="spec-list">
+                <li><span>Project Classification:</span> <div class="spec-text">Process Flow Mapping & Technical Diagram Layout</div></li>
+                <li><span>Objective:</span> <div class="spec-text">Transform complex statutory legal text or organizational workflows into structured, sequential vector diagrams to ease public comprehension.</div></li>
+                <li><span>Technical Execution:</span> <div class="spec-text">Built sequential flow structures using path routing logic, distinct color zoning for operational levels, and standardized geometric logic to ensure clarity across print resolutions. Fixed unparsed math expressions to plain text layout formatting: Director accepts EIS (s.56).</div></li>
+                <li><span>Source Baseline:</span> <div class="spec-text">Reference implementation from EIA Process Mapping under the Environment Act 2000.</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="pdf-container">
+            <iframe src="hydromulching 2016 brouchure.pdf#page=1&view=FitH"></iframe>
+        </div>
+        <div class="project-details">
+            <h3>Project Case 4: Commercial Marketing Media & Pre-Press Formatting</h3>
+            <ul class="spec-list">
+                <li><span>Project Classification:</span> <div class="spec-text">Corporate Marketing Print Media</div></li>
+                <li><span>Objective:</span> <div class="spec-text">Prepare high-volume communication graphics completely optimized for direct hand-off to commercial printers.</div></li>
+                <li><span>Technical Execution:</span> <div class="spec-text">Managed file preparation including mandatory CMYK color spacing profiles, minimum 300 DPI image assets, exact bleed allowances, safety margins, and crop registration marks. Handed over zero-error source files directly eliminating vendor-side technical delays.</div></li>
+                <li><span>Source Baseline:</span> <div class="spec-text">Reference implementation from Douglas Environmental Services Brochure Layout.</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="pdf-container">
+            <iframe src="japan essence edited.pdf#page=1&view=FitH"></iframe>
+        </div>
+        <div class="project-details">
+            <h3>Project Case 5: Institutional Newsletter & Editorial Magazine Layout</h3>
+            <ul class="spec-list">
+                <li><span>Project Classification:</span> <div class="spec-text">Institutional Newsletter & Editorial Magazine Layout</div></li>
+                <li><span>Objective:</span> <div class="spec-text">Format a multi-page informational layout incorporating multi-column article arrays, mixed-media photography inserts, and serial publication indexes.</div></li>
+                <li><span>Technical Execution:</span> <div class="spec-text">Managed complex multi-column text flows, calculated image-wrap margins to prevent typographic collision, designed thematic front-cover tables of contents, and established clear publication-branding headers.</div></li>
+                <li><span>Source Baseline:</span> <div class="spec-text">Reference implementation from University of Papua New Guinea (UPNG) Japanese Language Programme Newsletter.</div></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Simon Gabriel | Galokasio Art & Designs. Proprietary portfolio documentation prepared for the Parliamentary Media Service evaluation.
+    </footer>
+
+</div>
+
+</body>
+</html>
